@@ -1,0 +1,56 @@
+.DateRangePickerInput__withBorder {
+  border: none;
+}
+.DateInput {
+  width: 20rem;
+  border-radius: 15px;
+}
+.DateInput_input__focused {
+  background: var(--color-grey-200);
+  border-bottom: 2px solid var(--color-brand-700);
+}
+.DateInput_input__focused_3 {
+  background: var(--color-grey-200) !important;
+}
+.SingleDatePickerInput__withBorder {
+  border: none;
+  border-radius: 15px;
+}
+.DateInput_input {
+  background: transparent;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid var(--color-grey-300);
+}
+.DateInput_input:focus {
+  background: var(--color-grey-200);
+  color: var(--color-grey-700);
+}
+
+.CalendarDay__selected {
+  background: var(--color-brand-500);
+  border: 1px double var(--color-brand-500);
+}
+.CalendarDay__selected:hover {
+  background: var(--color-brand-500);
+  border: 1px double var(--color-brand-500);
+}
+.CalendarDay__selected_span {
+  background: var(--color-brand-200);
+  border: 1px double var(--color-brand-200);
+}
+
+.CalendarDay__hovered_span {
+  background: var(--color-brand-200);
+  border: 1px double var(--color-brand-200);
+  color: var(--color-brand-700);
+}
+.CalendarDay__hovered_span:hover {
+  background: var(--color-brand-200);
+  border: 1px double var(--color-brand-200);
+  color: var(--color-brand-700);
+}
+
+.DateRangePickerInput_arrow_svg {
+  margin: 0 1rem;
+}

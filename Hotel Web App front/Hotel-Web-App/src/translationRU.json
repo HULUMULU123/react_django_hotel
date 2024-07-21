@@ -1,0 +1,19 @@
+{
+  "title": "DE ***** Title",
+  "Welcome to React": "DE  **** Welcome to React and react-i18next",
+  "description": {
+    "part1": "RU",
+    "part2": "DE  **** some description"
+  },
+  "sidebar": {
+    "home": "Главная",
+    "booking": "Бронирование",
+    "rooms": "Номера",
+    "contacts": "Связь с нами"
+  },
+  "datepicker": {
+    "start": "Дата прибытия",
+    "end": "Дата выезда",
+    "guests": "Гости"
+  }
+}

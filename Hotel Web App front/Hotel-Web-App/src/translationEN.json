@@ -1,0 +1,19 @@
+{
+  "title": "Title",
+  "Welcome to React": "Welcome to React and react-i18next",
+  "description": {
+    "part1": "EN",
+    "part2": "some description"
+  },
+  "sidebar": {
+    "home": "Home",
+    "booking": "Booking",
+    "rooms": "Rooms",
+    "contacts": "Contact us"
+  },
+  "datepicker": {
+    "start": "Start Date",
+    "end": "End Date",
+    "guests": "Guests"
+  }
+}
