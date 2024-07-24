@@ -24,6 +24,11 @@ const StyledBookingForm = styled.form`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: absolute;
+  z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25rem;
   width: 80rem;
   height: 10rem;
   margin: 0 auto;
@@ -36,6 +41,19 @@ const StyledBookingForm = styled.form`
     width: 2.7rem;
     height: 2.7rem;
   }
+`;
+
+const StyledImage = styled.img`
+  margin: 0 auto;
+  height: 30rem;
+  width: 90rem;
+  border-radius: 30px;
+`;
+
+const DisplayFlex = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: relative;
 `;
 
 function BookingForm({ bookingRooms, setNextStep }) {
@@ -120,7 +138,8 @@ function BookingForm({ bookingRooms, setNextStep }) {
   //     .then((res) => console.log(res));
   // }
   return (
-    <>
+    <DisplayFlex>
+      <StyledImage src="-6-2.jpg" />
       <StyledBookingForm onSubmit={handleSubmit(onSubmit, onError)}>
         <input hidden disabled id="locale" value={moment.locale()} />
         <DatePickerComponent
@@ -157,7 +176,7 @@ function BookingForm({ bookingRooms, setNextStep }) {
           <FirstTimeBooking />
         )}
       </StyledBookingInformation> */}
-    </>
+    </DisplayFlex>
   );
 }
 

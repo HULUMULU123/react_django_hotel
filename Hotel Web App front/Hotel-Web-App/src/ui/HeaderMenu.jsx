@@ -21,6 +21,13 @@ export const StyledInformation = styled.p`
   font-size: 1.2rem;
   margin-right: 0.5rem;
   ${(props) => (props.type === "locale" ? css`` : "")}
+  ${(props) =>
+    props.type === "account"
+      ? css`
+          color: var(--color-grey-0);
+          align-self: center;
+        `
+      : ""}
 `;
 function HeaderMenu() {
   const navigate = useNavigate();
@@ -42,12 +49,14 @@ function HeaderMenu() {
     <StyledHeaderMenu>
       <li>
         {userInfo.username ? (
-          <ButtonIcon onClick={() => navigate("/account")}>
-            <StyledInformation>{userInfo.name}</StyledInformation>
+          <ButtonIcon onClick={() => navigate("/account")} type="account">
+            <StyledInformation type="account">
+              {userInfo.name}
+            </StyledInformation>
             <HiOutlineUser />
           </ButtonIcon>
         ) : (
-          <ButtonIcon onClick={() => navigate("../login")}>
+          <ButtonIcon onClick={() => navigate("../login")} type="account">
             <IoLogInOutline />
           </ButtonIcon>
           // <Link to="../login">

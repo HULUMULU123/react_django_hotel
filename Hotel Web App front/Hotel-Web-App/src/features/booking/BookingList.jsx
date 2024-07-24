@@ -8,6 +8,7 @@ import Empty from "../../ui/Empty";
 import BookingRoomForm from "./BookingRoomForm";
 const StyledBookingList = styled.ul`
   display: flex;
+  margin-top: 7rem;
   width: 100%;
   gap: 1rem;
   flex-direction: column;

@@ -12,7 +12,7 @@ const StyledGuestForm = styled.div`
   justify-content: space-around;
   z-index: 20;
   position: absolute;
-  top: 18rem;
+  top: 10rem;
   background: #fff;
   box-shadow: 0 1px 8px var(--color-grey-200);
   border: 1px solid var(--color-grey-300);
